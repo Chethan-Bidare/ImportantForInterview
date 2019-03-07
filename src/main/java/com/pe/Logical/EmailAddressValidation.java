@@ -23,4 +23,34 @@ public class EmailAddressValidation {
 		eav.validateEmail(str);
 		
 	}
+	
+	
+	public void getMiddleIndex(int[] arr) {
+		int startIndex = 0;
+		int endIndex = arr.length -1 ;
+		int leftSum = 0 ;
+		int rightSum = 0 ;
+		int index = 0 ;
+		
+		while(true) {
+			if(leftSum < rightSum) {
+				leftSum += arr[startIndex++];
+				index ++ ;
+			}
+			else
+				rightSum += arr[endIndex--];
+			
+			if(startIndex > endIndex) {
+				if(leftSum == rightSum) {
+					System.out.println(index);
+					System.out.println(" Valid Array : left sum and right sum are equal");
+					break ;
+				}
+				else
+					System.out.println("invalid array");
+				
+			}
+		}
+		
+	}
 }

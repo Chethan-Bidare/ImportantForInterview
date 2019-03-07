@@ -41,6 +41,7 @@ public class SubarrayWithGivenSum {
 		sgs.getSubArrayWithGivenSum(arr, 6);
 	}
 	
+	
 	public void getSubArray(int[] arr , int targetSum) {
 		int start = 0, end = 0 ;
 		int currentSum = 0 ;
@@ -69,45 +70,6 @@ public class SubarrayWithGivenSum {
 				}
 			}
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	
 }

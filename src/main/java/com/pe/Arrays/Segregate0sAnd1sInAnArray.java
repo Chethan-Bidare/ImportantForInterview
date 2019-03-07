@@ -32,4 +32,6 @@ public class Segregate0sAnd1sInAnArray {
 		int[] arr = {1,0,0,1,1,1,0,1,0,1,1,1,1,1,0};
 		sa.segregate(arr);
 	}
+	
+	
 }

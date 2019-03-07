@@ -34,4 +34,23 @@ public class CompressString {
 		cs.doCompress(str);
 		//cs.bid ;
 	}
+	
+	
+	public boolean isAnagram(String str1, String str2) {
+		char[] ch = str1.toCharArray();
+		StringBuilder sb = new StringBuilder(str2);
+		int index=0 ;
+		for(Character c : ch) {
+			index = sb.indexOf(""+c);
+			if(index != -1) {
+				sb.deleteCharAt(index);
+			}
+		}
+		
+		if(sb.length() == 0)
+			return true ;
+		else
+			return false ;
+		
+	}
 }
