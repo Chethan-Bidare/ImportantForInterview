@@ -11,9 +11,10 @@ public class ReverseWordsInAString {
 		for(int i=0; i< temp.length; i++) {
 			String temp1 = temp[i];
 			char[] ch = temp1.toCharArray();
-			for(int j=ch.length-1; j>0 ; j++) {
-				System.out.println(j);
+			for(int j=ch.length-1; j>=0 ; j--) {
+				System.out.print(ch[j]);
 			}
+			System.out.print(" ");
 		}
 	}
 	
